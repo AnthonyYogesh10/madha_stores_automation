@@ -29,7 +29,7 @@ class CartPage:
         for product in product_name:
             if product.text == cart_product:
                 index = product_name.index(product)
-                print("index value is : ", index)
+                # print("index value is : ", index)
 
         return index
 
@@ -76,7 +76,7 @@ class CartPage:
 
         return product_detail
 
-    def check_add_btn(self, product_name):
+    def check_plus_btn(self, product_name):
 
         self.click_add_btn(product_name)
         time.sleep(2)
@@ -118,7 +118,7 @@ class CartPage:
         else:
             print("the + button not working properly")
 
-    def check_sub_btn(self, product_name):
+    def check_minus_btn(self, product_name):
         self.click_sub_btn(product_name)
         time.sleep(2)
         product = self.specific_product_datas(product_name)
@@ -186,3 +186,5 @@ class CartPage:
             print("grand total works good")
         else:
             print("sum of grand total is failed")
+
+

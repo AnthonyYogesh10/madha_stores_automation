@@ -25,8 +25,8 @@ class Test_cart_checkout:
     def test_checkout_02(self):
         self.hp.click_cart_btn()
         time.sleep(3)
-        self.cp.check_add_btn("நைசில் 150g")
+        self.cp.check_plus_btn("நைசில் 150g")
         time.sleep(5)
-        self.cp.check_sub_btn("நைசில் 150g")
+        self.cp.check_minus_btn("நைசில் 150g")
         self.cp.check_sum_of_grand_total()
         time.sleep(5)
